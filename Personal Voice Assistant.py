@@ -1,3 +1,4 @@
+from more_itertools import take
 import pyttsx3
 import datetime
 import speech_recognition as sr
@@ -5,7 +6,7 @@ import wikipedia
 import webbrowser 
 import os
 import smtplib #email 
-import pywhatkit # whatsapp messages
+import pywhatkit as kit # kit for python - whatsapp message, youtube etc
 
 
 
@@ -126,6 +127,8 @@ if __name__ == "__main__":
         
 
 
-        #whatsapp message
-        elif 'send whatsapp messeage'
-        
+        #youtube videos
+        elif "play songs on youtube" in query:
+            speak("what songs you want me to play")
+            songtoplay = takeCommand().lower()
+            kit.playonyt(songtoplay)
